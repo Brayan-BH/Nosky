@@ -1,0 +1,82 @@
+/* Fuente Lobster google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+
+body {
+    background: linear-gradient(#808080, #3fada8);
+    transition: all 0.50s;
+}   
+
+
+body.darkmode {
+    background: linear-gradient( #19547b, #ffd89b);
+    /* background: linear-gradient(#fceabb, #f8b500); */
+}
+
+/* Animación con keyframe llamada "latidos" */
+@keyframes latidos {
+    from { transform: none; }
+    50% { transform: scale(1.4); }
+    to { transform: none; }
+}
+/* En la clase heart vamos a llamar latidos en la animación  */
+.heart {
+	display: inline-block;
+	font-size: 120px;
+	/* text-shadow: 0 0 10px #222,1px 1px  0 #450505; */
+	color: red;
+	animation: latidos .5s infinite;
+	/* transform-origin: center; */
+    cursor: pointer;
+}
+
+
+.title {
+    font-size: 8vw;
+    position: relative;
+    margin: 3rem;
+    text-align: center;
+    font-family: "Lobster", cursive;
+}
+
+.container {
+    /* display: flex; */
+    place-content: center;
+    /* margin-top: 5rem; */
+    margin: 30px;
+}
+
+.galery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-flow: dense;
+    margin: 1rem;
+    /* width: min(50%, 50rem); */
+    /* row-gap: 0.5rem; */
+    /* column-gap: 0.5rem; */
+    /* gap: 0.5rem 0.5rem; */
+    gap: 0.2rem;
+    /* margin-bottom: 5rem; */
+}
+
+.galery > img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.galery > .img-1x1 {
+    grid-column-end: span 1;
+    grid-row-end: span 1;
+    aspect-ratio: 1/1;
+}
+
+.galery > .img-2x2 {
+    grid-column-end: span 2;
+    grid-row-end: span 2;
+    aspect-ratio: 1/1;
+}
+
+.galery > .img-2x1 {
+    grid-column-end: span 2;
+    grid-row-end: span 1;
+    aspect-ratio: 1/1;
+}
