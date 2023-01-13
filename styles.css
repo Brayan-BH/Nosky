@@ -2,13 +2,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
 
 body {
-    background: linear-gradient(#808080, #3fada8);
+    background: linear-gradient(#252525, #808080);
     transition: all 0.50s;
 }   
 
 
 body.darkmode {
-    background: linear-gradient( #19547b, #ffd89b);
+    background: linear-gradient( #252525, rgb(42, 39, 39));
     /* background: linear-gradient(#fceabb, #f8b500); */
 }
 
@@ -35,6 +35,7 @@ body.darkmode {
     position: relative;
     margin: 3rem;
     text-align: center;
+    color: #fff;
     font-family: "Lobster", cursive;
 }
 
