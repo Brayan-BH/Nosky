@@ -61,7 +61,15 @@ body.darkmode {
 
 .galery > img {
     width: 100%;
-    object-fit: cover;
+    object-fit: fill;
+    transition: transform .2s; 
+
+}
+
+.galery > img:hover {
+    transform: scale(1.5);
+    width: 100%;
+    max-width: 100vh;    
 }
 
 .galery > .img-1x1 {
